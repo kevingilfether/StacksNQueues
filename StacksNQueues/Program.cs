@@ -15,12 +15,17 @@ namespace StacksNQueues
 
             foreach (char character in myCharArray)
             {
-                myCharQueue.Enqueue(character);
                 myCharStack.Push(character);
+                myCharQueue.Enqueue(character);
             }
 
-            myCharStack.Push
+            for (int i = 0; i < myCharStack.Count; i++)
+                Console.WriteLine(myCharStack.Pop());
 
+            for (int i = 0; i < myCharQueue.Count; i++)
+                Console.WriteLine(myCharQueue.Dequeue());
+            
+            
         }
     }
 }

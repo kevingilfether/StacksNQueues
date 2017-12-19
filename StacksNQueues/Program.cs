@@ -11,7 +11,15 @@ namespace StacksNQueues
 
             Queue<char> myCharQueue = new Queue<char>();
 
+            char[] myCharArray = { 'a', 'b', 'c', 'd', 'e' };
 
+            foreach (char character in myCharArray)
+            {
+                myCharQueue.Enqueue(character);
+                myCharStack.Push(character);
+            }
+
+            myCharStack.Push
 
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StacksNQueues
 {
@@ -6,7 +7,12 @@ namespace StacksNQueues
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Stack<char> myCharStack = new Stack<char>();
+
+            Queue<char> myCharQueue = new Queue<char>();
+
+
+
         }
     }
 }

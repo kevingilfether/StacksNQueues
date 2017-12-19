@@ -32,8 +32,11 @@ namespace StacksNQueues
 
             //This will work!
             for (int i = 0; i < myCharArray.Length; i++)
+            {
                 Console.WriteLine(myCharStack.Pop());
                 Console.WriteLine(myCharQueue.Dequeue());
+                Console.WriteLine();
+            }
 
 
         }

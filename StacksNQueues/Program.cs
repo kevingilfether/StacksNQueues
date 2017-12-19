@@ -19,13 +19,23 @@ namespace StacksNQueues
                 myCharQueue.Enqueue(character);
             }
 
-            for (int i = 0; i < myCharStack.Count; i++)
-                Console.WriteLine(myCharStack.Pop());
 
-            for (int i = 0; i < myCharQueue.Count; i++)
+            //This will not work, because the stack gets smaller as it pops
+            //for (int i = 0; i < myCharStack.Count; i++)
+            //{
+            //    Console.WriteLine(myCharStack.Pop());
+            //}
+
+            ////Ditto the stack, this will also not work
+            //for (int i = 0; i < myCharQueue.Count; i++)
+            //    Console.WriteLine(myCharQueue.Dequeue());
+
+            //This will work!
+            for (int i = 0; i < myCharArray.Length; i++)
+                Console.WriteLine(myCharStack.Pop());
                 Console.WriteLine(myCharQueue.Dequeue());
-            
-            
+
+
         }
     }
 }

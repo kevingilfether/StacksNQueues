@@ -11,6 +11,8 @@ namespace StacksNQueues
 
             Queue<char> myCharQueue = new Queue<char>();
 
+            LinkedList<char> myLinkedList = new LinkedList<char>();
+
             char[] myCharArray = { 'a', 'b', 'c', 'd', 'e' };
 
             foreach (char character in myCharArray)

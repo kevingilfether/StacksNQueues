@@ -19,6 +19,7 @@ namespace StacksNQueues
             {
                 myCharStack.Push(character);
                 myCharQueue.Enqueue(character);
+                myLinkedList.AddLast(character);
             }
 
 
@@ -38,6 +39,11 @@ namespace StacksNQueues
                 Console.WriteLine(myCharStack.Pop());
                 Console.WriteLine(myCharQueue.Dequeue());
                 Console.WriteLine();
+            }
+
+            foreach (char node in myLinkedList)
+            {
+                Console.WriteLine(node);
             }
 
 

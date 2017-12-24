@@ -41,10 +41,13 @@ namespace StacksNQueues
                 Console.WriteLine();
             }
 
-            foreach (char node in myLinkedList)
-            {
-                Console.WriteLine(node);
-            }
+            //foreach (char node in myLinkedList)
+            //{
+            //    Console.WriteLine(node);
+            //}
+
+            var node = myLinkedList.Find('a');
+            Console.WriteLine(node);
 
 
         }
